@@ -1,0 +1,70 @@
+
+
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+
+<body>
+    <!-- https://www.bmf-steuerrechner.de/ekst/eingabeformekst.xhtml?ekst-result=true -->
+    <form action="">
+
+       
+           
+        
+        <section>
+           
+          
+            <h1>Berechnung der Einkommensteuer </h1>
+            
+            <p class="willk"> Willkommen beim Steuerhilfeverein. <br> Geben Sie Ihre Daten ein und bekommen kostenlos die Berechnung!
+            </p>
+        </section>
+
+        <section>
+            <label for="">Gebe das Geschäftsjahr ein</label>
+            <select name="" id="jahr">
+                <option value="jahrAngeben">Jahr</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+            </select>
+            <p id="jahrAngeben"></p>
+        </section>
+
+        <section>
+            <label for="">Bitte geben Sie die Anzahl der Personen</label>
+            <select name="" id="person">
+                <option value="personAngeben">Anzahl der Personen</option>
+                <option value="1Person" onclick="Person2Ausschalten()">1</option>
+                <option value="2Person" id="person2">2</option>
+            </select>
+            <p id="personenAngeben"></p>
+        </section>
+
+        <section>
+            <label for="">Bitte geben Sie den zu versteuernde Einkommen ein</label>
+            <br>
+            <label for="">Einkommen Person 1</label>
+            <input type="number" name="" id="zvE1">
+            <label for="number">Einkommen Person 2</label>
+            <input type="number" name="" id="zvE2">
+        </section>
+        <input type="button" id="butt" value="Berechnung" onclick="berechnen()">
+        <h2 id="ausgabePerson1"></h2>
+        <h2 id="ausgabePerson2"></h2>
+        </section>
+    </form>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
